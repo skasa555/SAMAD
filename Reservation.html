@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="emb.jpeg" alt="emblème de la ville de Bobo-Dioulasso">
+        <h1>Bobo-Dioulasso</h1>
+        <div class="aa">
+            <a href="Acceuil.html">Acceuil</a>
+            <a href="Site.html">Patrimoine</a>
+            <a href="Reservation.html">Hotels</a>
+            <a href="Galerie.html">Galerie</a>
+        </div>
+    </header>
+    <main>
+        <h2>Hôtels à Bobo-Dioulasso</h2>
+        <section class="hotel-list">
+            <article>
+                <img src="ranhotel.jpg" alt="Ranhôtel">
+                <h3>Ranhôtel</h3>
+            </article>
+            <article>
+                <img src="sissiman.jpeg" alt="Hôtel Sissiman">
+                <h3>Hôtel Sissiman</h3>
+            </article>
+            <article>
+                <img src="auberge.jpg" alt="Hôtel Auberge">
+                <h3>Hôtel Auberge</h3>
+            </article>
+            <article>
+                <img src="entente.jpeg" alt="Hôtel l'Entente">
+                <h3>Hôtel l'Entente</h3>
+            </article>
+            <article>
+                <img src="pacific.jpg" alt="Hôtel Pacific">
+                <h3>Hôtel Pacific</h3>
+            </article>
+            <article>
+                <img src="villarose.jpg" alt="Hôtel Villa Rose">
+                <h3>Hôtel Villa Rose</h3>
+            </article>
+            <article>
+                <img src="teria.jpg" alt="Hôtel Teria">
+                <h3>Hôtel Teria</h3>
+            </article>
+            <article>
+                <img src="les2palmiers.jpg" alt="Hôtel les 2 Palmiers">
+                <h3>Hôtel les 2 Palmiers</h3>
+            </article>
+        </section>
+
+        <h2>Réservez votre séjour</h2>
+        <form action="#" method="post">
+            <label for="hotel">Choisissez votre hôtel :</label>
+            <select id="hotel" name="hotel" required>
+                <option value="">Sélectionnez un hôtel</option>
+                <option value="Ranhôtel">Ranhôtel</option>
+                <option value="Hôtel Sissiman">Hôtel Sissiman</option>
+                <option value="Hôtel Auberge">Hôtel Auberge</option>
+                <option value="Hôtel l'Entente">Hôtel l'Entente</option>
+                <option value="Hôtel Pacific">Hôtel Pacific</option>
+                <option value="Hôtel Villa Rose">Hôtel Villa Rose</option>
+                <option value="Hôtel Teria">Hôtel Teria</option>
+                <option value="Hôtel les 2 Palmiers">Hôtel les 2 Palmiers</option>
+            </select>
+
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Téléphone :</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="check-in">Date d'arrivée :</label>
+            <input type="date" id="check-in" name="check-in" required>
+            
+            <label for="check-out">Date de départ :</label>
+            <input type="date" id="check-out" name="check-out" required>
+            
+            <label for="rooms">Nombre de chambres :</label>
+            <input type="number" id="rooms" name="rooms" min="1" required>
+            
+            <button type="submit">Réserver</button>
+        </form>
+    <footer>
+        &copy; 2024 Bobo-Dioulasso. Tous droits réservés.
+    </footer>
+    
+</body>
+</html>

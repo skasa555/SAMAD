@@ -1,0 +1,286 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("fond2.jpg");
+    background-size: 100%;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    /*Ajouter une barre de défilement*/
+    overflow-y: auto;
+}
+
+header{
+    /*placer les elements du header sur la meme ligne*/
+    display: flex;
+    background-color: #1d68bd;
+    width:auto;
+    height: 125px;
+    color: #FFF;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0px;
+}
+
+h1{
+    /*centrer le titre*/
+    text-align: center;
+    font-weight: 400;
+    margin: 0 16px;
+    color: #FFF;
+    flex-grow: 1;
+    font-size: 75px
+}
+
+header img{
+    /*placer l'image à droite puis reduction de sa taille */
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.aa a{
+    /*changer la couleur du lien*/
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 100;
+    word-spacing: 5px;
+    text-align: left;
+    display: inline;
+    width: 5%;
+    background-color: #1d68bd;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 10px 10px;
+    transition: background-color 0.3s , color 0.3s;
+}
+
+/*Changer l'effet de la zone du lien lors du survol*/
+.aa a:hover{
+    background-color: #bbbbbb48;
+}
+
+.ab{
+    display: flex;
+}
+
+.lab .ima img{
+    width: 300px;
+    height: 300px;
+    margin: 0px;
+}
+.ab p{
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.ab a{
+    text-decoration: none;
+}
+
+.ab span{
+    font-weight: 600;
+    color: black;
+}
+
+.lab{
+    display: inline-block;
+    margin: 0px 20px;
+    border: 1px solid #777;
+    width: 300px;
+    height: auto;
+    padding: 0px;
+}
+
+.lab h3{
+    font-weight: 500;
+    margin: 0px 0px;
+    color: #fff;
+    background-color: #6eb84c;
+    border-radius: 0px;
+    text-align: center;
+    width: 300px;
+    height: 30px;
+}
+
+.lab p{
+    display: inline-block;
+    font-size: 18px;
+    line-height: 2px;
+}
+
+.lab img{
+    width: 20px;
+    height: 15px;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Style pour la liste des sites patrimoniaux */
+.site {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centre les images horizontalement */
+    gap: 10px; /* Espacement entre les images */
+}
+
+.site a {
+    display: block;
+    width: 200px; /* Largeur fixe pour chaque image */
+    height: auto; /* Hauteur automatique pour conserver les proportions */
+}
+
+.site img {
+    width: 100%; /* Remplit le conteneur */
+    height: 90%; /* Conserve le ratio hauteur/largeur */
+    border-radius: 8px; /* Coins arrondis pour les images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre portée pour un effet de profondeur */
+    transition: transform 0.3s ease; /* Transition pour effet au survol */
+}
+
+.site img:hover {
+    transform: scale(1.05); /* Effet d'agrandissement au survol */
+}
+
+.bloc{
+    display: flex;
+}
+
+.imge{
+    margin: 0px 20px;
+    text-align: center;
+    position: fixed;
+    left: 5px;
+    top: 150px;
+    width: 300px;
+}
+
+.imge h2{
+    background-color: #6eb84c;
+    color: #fff;
+}
+
+.imge img{
+    width: 300px;
+    height: 300px;
+}
+
+.description{
+    /*Barre de défilement pour le text*/
+    margin-left: 360px;
+    padding: 10px;
+    overflow: auto;
+    max-height: 100pv;
+}
+
+.description p{
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.description h2{
+    text-align: center;
+}
+
+.gal{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    padding: 16px;
+}
+
+.photo{
+    background-color: #f0f0f0;
+    border: 1px solid #777;
+    padding: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.photo :hover{
+    transform: scale(1.05);
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+
+}
+.photo p{
+    margin: 8px 0 0;
+    font-size: 14px;
+    background-color: #6eb84c;
+}
+
+/* Style pour la liste des sites patrimoniaux */
+.hotel-list {
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    flex-wrap: wrap;
+    justify-content: center; /* Centre les images horizontalement */
+    gap: 10px; /* Espacement entre les images */
+}
+
+.hotel-list article {
+    border: 1px solid #777;
+    margin: 25px;
+    padding : 10px;
+    display: block;
+    width: 200px; /* Largeur fixe pour chaque image */
+    height: auto; /* Hauteur automatique pour conserver les proportions */
+}
+
+.hotel-list img {
+    width: 100%; /* Remplit le conteneur */
+    height: auto; /* Conserve le ratio hauteur/largeur */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre portée pour un effet de profondeur */
+    transition: transform 0.3s ease; /* Transition pour effet au survol */
+}
+
+.hotel-list img:hover {
+    transform: scale(1.05); /* Effet d'agrandissement au survol */
+}
+
+form {
+    margin-top: 30px;
+    text-align: center;
+}
+form label {
+    display: block;
+    margin-top: 10px;
+}
+form input, form select, form button {
+    background-color: #AAA;
+    width: 99%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+footer{
+    /*placer le contenu de l'element au centre*/
+    text-align: center;
+    display: block;
+    background-color: #AAA;
+    width: 100%;
+    height: 10px;
+    color: #FFF;
+    padding: 20px;
+    margin-top: 20px;
+    bottom: 0px;
+}
